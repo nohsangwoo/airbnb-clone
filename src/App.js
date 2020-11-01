@@ -1,23 +1,30 @@
+import React from "react";
 import "./App.css";
 import Home from "./Home";
 import Header from "./Header";
 import Footer from "./Footer";
 import SearchPage from "./SearchPage";
 
-// BEM
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
 function App() {
   return (
+    // BEM
     <div className="app">
-      <h1>lets build airbnb clone</h1>
+      <Router>
+        <Header />
 
-      <Home></Home>
-      <Header></Header>
+        <Switch>
+          <Route path="/search">
+            <SearchPage />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
 
-      {/* Banner */}
-      {/* Search */}
-
-      {/* Cards */}
-      {/* Footer */}
+        <Footer />
+      </Router>
     </div>
   );
 }
