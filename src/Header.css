@@ -39,3 +39,11 @@
   width: 15vw;
   margin-right: 80px;
 }
+
+button {
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+}
