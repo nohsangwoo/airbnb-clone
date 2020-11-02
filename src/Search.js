@@ -12,8 +12,6 @@ function Search() {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
 
-  console.log(startDate, endDate);
-
   const selectionRange = {
     startDate: startDate,
     endDate: endDate,
